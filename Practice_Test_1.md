@@ -43,3 +43,32 @@
    <summary><b>Click to get Answer</b></summary>
 <p><b>Option 1.</b> Each Amazon VPC is placed in a specific Region and can span all the Availability Zones within that Region. Option 2 is incorrect because a subnet must be placed within the Region for the selected VPC. Option 3 is incorrect because edge locations are not available for subnets, and option 4 is incorrect because you cannot choose specific data centers.</p>
  </details>
+ 
+ ----
+ 
+ **Question : 4 ]** If 2 EC2 Instances have same Private IP, what could be the reason?
+
+  1. Instances are in different VPC
+  2. Instances are in different subnets
+  3. Instances have different network ACLs
+  4. Instances have different security groups
+  
+<details>
+   <summary><b>Click to get Answer</b></summary>
+<p><b>Option 1.</b> Even though each instance in an Amazon VPC has a unique private IP address, you could assign the same private IP address ranges to multiple Amazon VPCs. Therefore, two instances in two different Amazon VPCs in your account could end up with the same private IP address. Options 2, 3, and 4 are incorrect because within the same Amazon VPC, there is no duplication of private IP addresses.</p>
+ </details>
+
+----
+
+**Question : 5 ]** If your project required high workload like 16,000 consistent IOPS for data that must be durable. What combination of the following is more efficient? (Select TWO.)
+
+  1. Amazon EBS optimized instance
+  2. Instance store
+  3. Provisioned IOPS SSD volume
+  4. Previous-generation EBS volume
+  
+<details>
+   <summary><b>Click to get Answer</b></summary>
+<p><b>Option 1 and 3</b> Amazon EBS optimized instances reserve network bandwidth on the instance for I/O, and Provisioned IOPS SSD volumes provide the highest consistent IOPS. Option 2 is incorrect because instance store is not durable. Option 4 is incorrect because a previous-generation EBS volume offers an average of 100 IOPS.</p>
+ </details>
+
