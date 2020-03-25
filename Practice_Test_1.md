@@ -1,4 +1,4 @@
-# AWS Certified Developer Assosiate (DVA-C01) Practise Test 1 #
+# AWS Certified Developer Associate (DVA-C01) Practise Test 1 #
 
 
 **Question : 1 ]** As a developer, you have an application running on Amazon EC2. That application needs read-only access to several other AWS services. What is the best practice to grant that application permissions only to a specific set of resources within your aws account?
@@ -32,3 +32,14 @@
 
 ----
 
+**Question : 3 ]** When you are placing subnets for a specific VPC, you can place the subnets in which of the following? 
+
+  1. In any Availability Zone within the Region
+  2. In any Availability Zone in any Region
+  3. In any AWS edge location
+  4. In any specific AWS data center
+  
+<details>
+   <summary><b>Click to get Answer</b></summary>
+<p><b>Option A.</b> Each Amazon VPC is placed in a specific Region and can span all the Availability Zones within that Region. Option B is incorrect because a subnet must be placed within the Region for the selected VPC. Option C is incorrect because edge locations are not available for subnets, and option D is incorrect because you cannot choose specific data centers.</p>
+ </details>
