@@ -8,6 +8,6 @@ AWS certified professionals have an average annual salary of no less than $130,0
 Below set of Practice test will help you to test your preparation. 
 
 
-1. [Practice Test 1]()
-2. [Practice Test 2]()
+1. [Practice Test 1](https://yash-sonani.github.io/awscertification.io/Practice_Test_1)
+2. [Practice Test 2](https://yash-sonani.github.io/awscertification.io/Practice_Test_2)
 
