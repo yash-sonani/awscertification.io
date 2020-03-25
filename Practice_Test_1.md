@@ -13,7 +13,7 @@
 
  <details>
   <summary><b>Click to get Answer</b></summary>
-   <p><b>Option D</b>. Use the custom IAM policy to configure the permissions to a specific set of resources in your account. The ReadOnlyAccess IAM policy restricts write access but grants access to all resources within your account. AWS account credentials are unrestricted. Policies do not go in an SDK configuration file. They are enforced by AWS on the backend.</p>
+   <p><b>Option 4</b>. Use the custom IAM policy to configure the permissions to a specific set of resources in your account. The ReadOnlyAccess IAM policy restricts write access but grants access to all resources within your account. AWS account credentials are unrestricted. Policies do not go in an SDK configuration file. They are enforced by AWS on the backend.</p>
  </details>
 
 ----
@@ -27,7 +27,7 @@
 
 <details>
    <summary><b>Click to get Answer</b></summary>
-<p><b>Option C.</b> This is the simplest approach because only a single resource is in the wrong Region. Option A is a possible approach, but it is not the simplest approach because it introduces cross-region calls that may increase latency and cross-region data transfer pricing.</p>
+<p><b>Option 3.</b> This is the simplest approach because only a single resource is in the wrong Region. Option 1 is a possible approach, but it is not the simplest approach because it introduces cross-region calls that may increase latency and cross-region data transfer pricing.</p>
  </details>
 
 ----
@@ -41,5 +41,5 @@
   
 <details>
    <summary><b>Click to get Answer</b></summary>
-<p><b>Option A.</b> Each Amazon VPC is placed in a specific Region and can span all the Availability Zones within that Region. Option B is incorrect because a subnet must be placed within the Region for the selected VPC. Option C is incorrect because edge locations are not available for subnets, and option D is incorrect because you cannot choose specific data centers.</p>
+<p><b>Option 1.</b> Each Amazon VPC is placed in a specific Region and can span all the Availability Zones within that Region. Option 2 is incorrect because a subnet must be placed within the Region for the selected VPC. Option 3 is incorrect because edge locations are not available for subnets, and option 4 is incorrect because you cannot choose specific data centers.</p>
  </details>
