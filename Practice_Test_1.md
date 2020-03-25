@@ -1,4 +1,4 @@
-## AWS Certified Developer Assosiate (DVA-C01) Practise Test 1
+# AWS Certified Developer Assosiate (DVA-C01) Practise Test 1 #
 
 
 **Question : 1 ]** As a developer, you have an application running on Amazon EC2. That application needs read-only access to several other AWS services. What is the best practice to grant that application permissions only to a specific set of resources within your aws account?
@@ -12,7 +12,7 @@
   4. Use IAM role with custom IAM policies for the permissions
 
  <details>
-   <summary>Answer</summary>
+  <summary><b>Click to get Answer</b></summary>
    <p><b>Option D</b>. Use the custom IAM policy to configure the permissions to a specific set of resources in your account. The ReadOnlyAccess IAM policy restricts write access but grants access to all resources within your account. AWS account credentials are unrestricted. Policies do not go in an SDK configuration file. They are enforced by AWS on the backend.</p>
  </details>
 
@@ -26,7 +26,7 @@
   4. Move the rest of the application resources to EU (London)
 
 <details>
-   <summary>Answer</summary>
+   <summary><b>Click to get Answer</b></summary>
 <p><b>Option C.</b> This is the simplest approach because only a single resource is in the wrong Region. Option A is a possible approach, but it is not the simplest approach because it introduces cross-region calls that may increase latency and cross-region data transfer pricing.</p>
  </details>
 
