@@ -72,3 +72,72 @@
 <p><b>Option 1 and 3</b> Amazon EBS optimized instances reserve network bandwidth on the instance for I/O, and Provisioned IOPS SSD volumes provide the highest consistent IOPS. Option 2 is incorrect because instance store is not durable. Option 4 is incorrect because a previous-generation EBS volume offers an average of 100 IOPS.</p>
  </details>
 
+----
+
+**Question : 6 ]** Your company stores critical documents in Amazon S3, but it wants to minimize cost. Most documents are used actively for only about one month and then used much less frequently after that. However, all data needs to be available within minutes when requested. How can you meet these requirements?
+
+  1. Migrate the data to Amazon S3 Reduced Redundancy Storage (RRS) after 30 days.
+  2. Migrate the data to Amazon S3 Glacier after 30 days.
+  3. Migrate the data to Amazon S3 Standard – Infrequent Access (IA) after 30 days.
+  4. Turn on versioning and then migrate the older version to Amazon S3 Glacier.
+  
+<details>
+	<summary><b>Click to get Answer</b></summary>
+	<p><b>Option 3</b> Migrating the data to Amazon S3 Standard-IA after 30 days using a lifecycle policy is correct. The lifecycle policy will automatically change the storage class for objects aged over 30 days. The Standard-IA storage class is for data that is accessed less frequently, but still requires rapid access when needed. It offers the same high durability, high throughput, and low latency of Standard, with a lower per gigabyte storage price and per gigabyte retrieval fee. Option 1 is incorrect because RRS provides a lower level of redundancy. The question did not state that the customer is willing to reduce the redundancy level of the data, and RRS does not replicate objects as many times as standard Amazon S3 storage. This storage option enables customers to store noncritical, reproducible data. Option 2 is incorrect because the fastest retrieval option for Amazon S3 Glacier is typically 3–5 hours. The customer requires retrieval in minutes. Option 4 is incorrect. Versioning will increase the number of files if new versions of files are being uploaded, which will increase cost. The question did not mention a need for multiple versions of files.</p>
+</details>
+
+----
+
+**Question : 7 ]** You have to transfer 3 PB of Data from on-premises to AWS cloud. Which migration option will be good choice with minimal cost and in less time?
+
+  1. AWS Snowball
+  2. AWS Snowmobile
+  3. Through Internet upload to S3
+  4. Amazon Kinesis Data Firehose
+
+<details>
+	<summary><b>Click to get Answer</b></summary>
+	<p><b>Option 1</b> Option 2 is incorrect. You could use Snowmobile, but that would not be as cost effective because it is meant to be used for datasets of 10 PB or more. Option 3 is incorrect because uploading files directly over the Internet to Amazon S3 would take many months and would be using your on-premises bandwidth. Option 4 is incorrect because Amazon Kinesis Data Firehose would still be transferring over the internet and take months to complete while using your on-premises bandwidth. </p>
+</details>
+
+----
+
+**Question : 8 ]** Which of the following AWS service is best for storing session state information of application?
+
+  1. Amazon DynamoDB
+  2. Amazon Redshift
+  3. AWS Storage Gateway
+  4. Amazon Kinesis
+
+<details>
+	<summary><b>Click to get Answer</b></summary>
+	<p><b>Option 1</b> DynamoDB is a NoSQL database store that is a good alternative because of its scalability, high availability, and durability characteristics. Many platforms provide open source, drop-in replacement libraries that enable you to store native sessions in DynamoDB. DynamoDB is a suitable candidate for a session storage solution in a share-nothing, distributed architecture.</p>
+</details>	
+
+----
+
+***Question : 9 ]** As a developer, you need to query 3 TB of data to obtain Report of business. Which of the following AWS service is best for deliver this result?
+
+  1. Amazon EBS
+  2. Amazon S3
+  3. Amazon RDS
+  4. Amazon Redshift
+  
+<details>
+	<summary><b>Click to get Answer</b></summary>
+	<p><b>Option 4</b> Amazon Redshift is the best choice for data warehouse workloads that typically span multiple data repositories and are at least 2 TB in size.</p>
+</details>	
+
+----
+
+**Question : 10 ]** Your ecommerce application provides daily and ad hoc reporting to various business units on customer purchases. These operations result in a high level of read traffic to your MySQL (Amazon RDS) instance. What can you do to scale up read traffic without impacting your database’s performance?
+
+  1. Increase the allocated storage for the Amazon RDS instance.
+  2. Modify the Amazon RDS instance to be a Multi-AZ deployment.
+  3. Create a read replica for an Amazon RDS instance.
+  4. Change the Amazon RDS instance DB engine version.
+  
+<details>
+	<summary><b>Click to get Answer</b></summary>
+	<p><b>Option 3</b> Amazon RDS read replicas provide enhanced performance and durability for Amazon RDS instances. This replication feature makes it easy to scale out elastically beyond the capacity constraints of a single Amazon RDS instance for read-heavy database workloads. You can create one or more replicas of a given source Amazon RDS instance and serve high-volume application read traffic from multiple copies of your data, increasing aggregate read throughput. </p>
+</details>	
